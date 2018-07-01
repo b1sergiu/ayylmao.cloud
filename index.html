@@ -1,4 +1,3 @@
-
 <!-- Released under MIT license. (c) S Stewart -->
 <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +15,15 @@
     <meta name="twitter:card" content="summary" />
     <meta name="author" content="Sergiu Bucur
     <meta name="theme-color" content="#212530" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118658887-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118658887-2');
+</script>
     <title>b1sergiu's place</title>
     <style>
      body { background-color: #212530; }
@@ -25,11 +33,35 @@
         text-align: center;
         max-width: 50%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: white;
+
      }
      .about {
         text-align: center;
         top: 50%;
      }
+.container {
+    position: relative;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: -340px;
+    left: 5px;
+    font-size: 18px;
+    color: white;
+
+}
+
+.bottomleftunder {
+    position: absolute;
+    bottom: -360px;
+    left: 5px;
+    font-size: 18px;
+    color: white;
+
+}
+
      /* Use the font */
      p, small, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto Mono', monospace;color: white; }
      /* No, fuck blue and purple colors, thanks */
@@ -81,11 +113,10 @@
      .gh-hover:hover, .tw-hover:hover, .rd-hover:hover, .dc-hover:hover, .pt-hover:hover {
         transform: scale(1.25);
      }
-     .discord-tag:hover:after { content: "tilda#9999"; }
-     .github-tag:hover:after { content: "/tilda"; }
-     .twitter-tag:hover:after { content: "/imtilda"; }
-     .patreon-tag:hover:after { content: "/lold"; }
-     .reddit-tag:hover:after { content: "/u/RShotZz"; }
+     .discord-tag:hover:after { content: "b1sergiu#6197"; }
+     .github-tag:hover:after { content: "/b1sergiu"; }
+     .twitter-tag:hover:after { content: "/b1sergiu"; }
+     .reddit-tag:hover:after { content: "/u/b1sergiu"; }
      /* Media queries */
     @media screen 
     and (min-device-width: 1200px) 
@@ -134,6 +165,17 @@
 		            <i class="fab fa-discord fa-2x icon dc-hover"></i><p class="tag discord-tag"></p>
                 </a>
             </li>
+            <li>
+                <a href="/about.html" target="_blank" rel="noopener">
+                            <i class="fas fa-address-card fa-2x icon gh-hover"></i><p class="tag github-tag"></p>
+                </a>
+            </li>
+
+            <li>
+                <a href="http://status.ayylmao.cloud/" target="_blank" rel="noopener">
+		            <i class="fas fa-cloud fa-2x icon gh-hover"></i><p class="tag github-tag"></p>
+                </a>
+            </li>
         </ul>
     </div>
     <div class="about">
@@ -141,9 +183,13 @@
         <p>Welcome to my website.</p>
         <p>I'm an SQL developer. Or at least that's what I'm supposed to be.</p>
         <p>Enjoy your stay!</p>
-		<br>
-		<br>
-		<h2>Looking for the PS4 modding guide? <a href="http://ps4.ayylmao.cloud">ps4.ayylmao.cloud</a>
+	<br>
+	<br>
+	<h2>Looking for the PS4 modding guide? <a href="http://ps4.ayylmao.cloud">ps4.ayylmao.cloud</a>
     </div>
+<div class="container">
+  <div class="bottomleft">Email: smtp at ayylmao.cloud</div>
+  <div class="bottomleftunder">Backup: webmaster at ayylmao.cloud</div>
+</div>
 </body>
 </html>
